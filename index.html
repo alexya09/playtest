@@ -80,6 +80,15 @@
 
         <!-- Builtin injector for injecting runner path -->
         
+        <script>
+    window.addEventListener("resize", resizeCanvas);
+    function resizeCanvas() {
+        let canvas = document.getElementById("canvas");
+        canvas.style.width = window.innerWidth + "px";
+        canvas.style.height = window.innerHeight + "px";
+    }
+    resizeCanvas();
+</script>
 
         <script>window.onload = GameMaker_Init;</script>
 
