@@ -102,24 +102,12 @@
         </div>
 
         <!-- Run the game code -->
-       <script type="text/javascript" src="AGORAVAI.js?cachebust=404999785"></script>
-
+        <script type="text/javascript" src="html5game/AGORAVAI.js?cachebust=1457243169"></script>
 
         <!-- Builtin injector for injecting runner path -->
         
 
-        <script>
-  window.onload = function () {
-    if (typeof GameMaker_Init === 'function') {
-      GameMaker_Init();
-    } else if (typeof gml_Script_gml_init === 'function') {
-      gml_Script_gml_init();
-    } else {
-      console.error("Função de inicialização não encontrada.");
-    }
-  };
-</script>
-
+        <script>window.onload = GameMaker_Init;</script>
 
         <!-- Builtin injector for injecting google analytics code -->
         
