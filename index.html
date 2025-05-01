@@ -108,7 +108,18 @@
         <!-- Builtin injector for injecting runner path -->
         
 
-        <script>window.onload = GameMaker_Init;</script>
+        <script>
+  window.onload = function () {
+    if (typeof GameMaker_Init === 'function') {
+      GameMaker_Init();
+    } else if (typeof gml_Script_gml_init === 'function') {
+      gml_Script_gml_init();
+    } else {
+      console.error("Função de inicialização não encontrada.");
+    }
+  };
+</script>
+
 
         <!-- Builtin injector for injecting google analytics code -->
         
