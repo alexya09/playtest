@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #000; /* fundo preto */
+        background-color: #FFFFFF; /* fundo preto */
     }
 
     #gm4html5_div_id {
@@ -40,12 +40,13 @@
     }
 
     canvas {
-        width: 90vw;  /* ocupa 90% da largura da janela */
-        height: auto; /* mantém a proporção */
-        max-width: 1219px; /* tamanho máximo original */
-        box-shadow: 0 0 20px rgba(0,0,0,0.7); /* sombra opcional para destaque */
-        border-radius: 10px; /* cantos arredondados */
-    }
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 </style>
 
 
